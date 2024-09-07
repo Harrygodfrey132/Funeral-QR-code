@@ -1,0 +1,276 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Gotham;
+    background-color: #ffffff; /* Off-White or Cream */
+}
+
+ /* Wrapper to control the width and centralize content */
+.container {  /* Limit the maximum width */
+    width: 100%;        /* Ensure it takes up the full width of the screen */
+    margin: 0 auto;     /* Centers the content horizontally */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: center; /* Center all content horizontally */
+    align-items: center; /* Vertically align items within the header */
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #002366; /* Navy Blue */
+    position: relative;
+}
+
+/* Center the logo and text */
+.logo-text-section {
+    display: flex;
+    flex-direction: column; /* Stack logo and text vertically */
+    align-items: center; /* Center both the logo and the text horizontally */
+    text-align: center;
+    flex: 1; /* Allow the section to grow to fill the space between the logo and contact */
+    justify-content: center; /* Center within the space */
+    padding-right: 20px; /* Add padding to prevent overlap with Contact section */
+}
+
+.logo {
+    width: 50px; /* Size of the Dove logo */
+    margin-bottom: 10px; /* Space between the logo and the "Blissful Moments" text */
+}
+
+h1 {
+    font-size: 36px;
+    color: #002366; /* Navy Blue */
+    margin: 0;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: right; /* Align the contact details to the right */
+    position: absolute;
+    right: 20px; /* Position the contact section on the right edge */
+    top: 20px; /* Align with the header top */
+}
+
+.contact-section p {
+    margin: 0;
+}
+
+.phone-number {
+    font-size: 24px;
+    color: #008080; /* Teal for phone number */
+    font-weight: bold;
+}
+/*Nav Bar */
+.navbar {
+    background-color: #f3f3f3; /* Navy Blue */
+    padding: 10px 0;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    padding: 0 15px; /* Space around each link */
+}
+
+.nav-links a {
+    color: #002366; /* Off-White or Cream */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #D4AF37; /* Muted Gold on hover */
+}
+/* Content Section */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-content {
+    max-width: 50%; /* Limit width of text content to 50% of the container */
+    padding-right: 20px; /* Add some space between text and image */
+}
+
+h2 {
+    color: #002366; /* Navy Blue */
+    font-size: 36px; /* Large font for heading */
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333333; /* Charcoal for description */
+    font-size: 18px; /* Slightly smaller text */
+    margin-bottom: 20px;
+}
+
+.highlight-text {
+    font-size: 22px; /* Make this text larger to stand out */
+    font-weight: bold;
+    color: #002366; /* Navy Blue */
+}
+
+.image-content {
+    max-width: 50%; /* Ensure the image takes 45% of the space */
+    height: auto;
+}
+
+.funeral-image {
+    width: 100%; /* Make the image responsive */
+
+}
+
+.features-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #002366; /* Navy Blue */
+    text-align: center;
+}
+
+/* Grid for the 3 feature columns */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between the columns */
+    margin-top: 20px;
+}
+
+/* Individual feature item */
+.feature-item {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    text-align: center; /* Center text and image inside each item */
+}
+
+/* Feature image styling */
+.feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Slight rounding on the corners */
+    margin-bottom: 15px;
+}
+
+/* Headings and paragraph for each feature */
+.feature-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #002366; /* Navy Blue */
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #333333; /* Charcoal */
+}
+
+/* Help Section */
+.help-section {
+    text-align: center;
+    margin: 50px 0;
+    background-color: #f9f9f9; /* Slightly off-white background */
+    padding: 40px 0;
+    border-top: 1px solid #ddd; /* Light line above */
+    border-bottom: 1px solid #ddd; /* Light line below */
+}
+
+.help-title {
+    font-size: 18px;
+    color: #666; /* Light gray color for title */
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Help options container */
+.help-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between options */
+}
+
+.help-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* White background for the boxes */
+    padding: 20px 30px;
+    width: 400px; /* Width of each box */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    transition: box-shadow 0.3s ease;
+    cursor: pointer; /* Makes the entire box clickable */
+    font-size: 16px;
+    color: #002366; /* Navy Blue text color */
+    text-decoration: none;
+}
+
+/* Add hover effect to the options */
+.help-option:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Increase shadow on hover */
+}
+
+/* Arrow styling */
+.arrow {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+
+/* Customizable Webpage Section */
+/* Customizable Webpage Section */
+.customizable-webpage-section {
+    width: 100%; /* Ensure the section takes the full width */
+    margin: 50px 0; /* Adds spacing around the section */
+    padding-bottom: 20px;
+    border-top: 1px solid #ddd; /* Light line at the bottom */
+    text-align: center; /* Center the heading and content */
+}
+
+/* Centered Heading */
+.customizable-webpage-section h2 {
+    font-size: 28px;
+    color: #002366; /* Navy Blue */
+    margin-bottom: 20px;
+}
+
+/* Box for the webpage content */
+.webpage-box {
+    width: 100%; /* Allow full width by default */
+    max-width: 1000px; /* Limit the width to a maximum of 1000px */
+    height: 500px; /* Fixed height for the webpage content area */
+    background-color: #f9f9f9; /* Light background for contrast */
+    margin: 0 auto; /* Center the box horizontally */
+    border: 1px solid #ccc; /* Light border around the box */
+    border-radius: 8px; /* Rounded corners for the box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds slight shadow for depth */
+    padding: 20px; /* Internal padding inside the box */
+}
+
+.webpage-box p {
+    font-size: 18px;
+    color: #555; /* Slightly muted color for placeholder text */
+}
