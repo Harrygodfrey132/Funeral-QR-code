@@ -1,7 +1,7 @@
 /* Base styles */
 body {
     margin: 0;
-    font-family: Gotham;
+    font-family: Garamond;
     background-color: #ffffff; /* Off-White or Cream */
 }
 
@@ -56,6 +56,8 @@ h1 {
 
 .contact-section p {
     margin: 0;
+    font-size: 22px;
+    padding-right: 40px;
 }
 
 .phone-number {
@@ -65,7 +67,7 @@ h1 {
 }
 /*Nav Bar */
 .navbar {
-    background-color: #f3f3f3; /* Navy Blue */
+    background-color: #f7f6f6; /* Navy Blue */
     padding: 10px 0;
     width: 100%;
 }
@@ -103,7 +105,6 @@ h1 {
     padding: 50px 0;
     max-width: 1200px;
     margin: 0 auto; /* Center the whole content section on the page */
-    border-bottom: 1px solid #ddd;
 }
 
 /* Text content */
@@ -119,6 +120,7 @@ h1 {
     text-align: left;
     margin-bottom: 20px;
 }
+
 
 .text-content p {
     font-size: 18px;
@@ -152,13 +154,26 @@ h1 {
     margin-bottom: 10px; /* Adds space between each bullet point */
 }
 
+.features-section {
 
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 50px;
+    border-top: 1px solid #ddd;
+
+}
 
 .features-section h2 {
     font-size: 28px;
     margin-bottom: 20px;
     color: #002366; /* Navy Blue */
     text-align: center;
+}
+
+.features-section h4 {
+    font-size: 18px;
+    color: #002366; /* Navy Blue */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Grid for the 3 feature columns */
@@ -203,10 +218,9 @@ h1 {
 .help-section {
     text-align: center;
     margin: 50px 0;
-    background-color: #f9f9f9; /* Slightly off-white background */
+    background-color: #ffffff; 
     padding: 40px 0;
     border-top: 1px solid #ddd; /* Light line above */
-    border-bottom: 1px solid #ddd; /* Light line below */
 }
 
 .help-title {
@@ -258,7 +272,6 @@ h1 {
     width: 100%; /* Ensure the section takes the full width */
     margin: 50px 0; /* Adds spacing around the section */
     padding-bottom: 20px;
-    border-top: 1px solid #ddd; /* Light line at the bottom */
     text-align: center; /* Center the heading and content */
 }
 
@@ -289,3 +302,206 @@ h1 {
     font-size: 18px;
     color: #555; /* Slightly muted color for placeholder text */
 }
+
+.faq-container {
+    margin: 0 60px;
+    margin: 0 auto;
+    padding: 30px 60px;
+    font-family: Arial, sans-serif;
+}
+
+.faq-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: 600;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    color: #2c3e50;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.faq-question:hover {
+    color: #2980b9;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #4b4b4b;
+    line-height: 1.6;
+}
+
+.arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .arrow {
+    transform: rotate(180deg);
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .faq-container {
+        padding: 10px;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer Container */
+/* Footer Container */
+/* Base Styles for Footer */
+.footer-container {
+    background-color: #ffffff; /* White background */
+    color: #002366; /* Navy Blue text */
+    padding: 50px 0; /* More space at top and bottom for professional look */
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    gap: 30px; /* Added space between sections */
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.6rem; /* Slightly larger heading */
+    margin-bottom: 20px;
+    color: #002366;
+    font-weight: 600; /* Bold headings */
+}
+
+.footer-section p {
+    font-size: 1rem; /* Refined body font */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section ul li i {
+    margin-right: 10px;
+    color: #002366;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.social-icons a {
+    color: #002366;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f1c40f; /* Gold on hover */
+}
+
+/* Contact Form Styling */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #002366;
+    border-radius: 5px;
+    color: #002366;
+    background-color: #ffffff;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #002366;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #004488;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #002366;
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #002366;
+}
+
+/* Responsive Footer Adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .footer-section {
+        margin-bottom: 40px;
+    }
+}
+
