@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: Garamond;
     background-color: #ffffff; /* Off-White or Cream */
+    overflow-x: hidden;
 }
 
  /* Wrapper to control the width and centralize content */
