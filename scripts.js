@@ -13,3 +13,9 @@ faqQuestions.forEach(question => {
     arrow.textContent = arrow.textContent === '▼' ? '▲' : '▼';
   });
 });
+
+
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+}
