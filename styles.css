@@ -50,7 +50,7 @@ h1 {
     text-align: right;
     position: absolute;
     right: 20px;
-    top: 70px;
+    top: 60px;
 }
 
 .contact-section p {
@@ -345,8 +345,10 @@ h4  {
         font-size: 24px; /* Reduce heading size */
     }
 
-    h4 {
-        font-size: 16px; /* Reduce sub-heading size */
+    .features-section h4 {
+        font-size: 14px; /* Reduce sub-heading size */
+        width: 90%;
+        padding: 30px;
     }
 
     .feature-item h3 {
@@ -412,72 +414,61 @@ h4  {
 
 /* Customizable Webpage Section */
 /* Customizable Webpage Section */
+/* Section Styling */
 .customizable-webpage-section {
-    width: 100%; /* Full width on desktop */
-    margin: 50px 0; /* Adds spacing around the section */
+    width: 100%; /* Full width of the container */
+    margin: 50px 0; /* Spacing around the section */
     padding-bottom: 20px;
-    text-align: center; /* Center the heading and content */
+    text-align: center; /* Center the heading */
 }
 
 /* Centered Heading */
 .customizable-webpage-section h2 {
-    font-size: 28px;
+    font-size: 32px; /* Larger heading size */
     color: #002366; /* Navy Blue */
     margin-bottom: 20px;
 }
 
+/* Webpage Box Styling */
+.webpage-box {
+    width: 80%; /* 80% width on desktop */
+    margin: 0 auto; /* Center the box horizontally */
+    padding: 40px; /* Padding inside the box */
+    background-color: #FAF3E0; /* Off-white or Cream */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    text-align: center; /* Center the content inside */
+}
+
 /* --- Mobile Responsive Adjustments --- */
 @media (max-width: 768px) {
-    .customizable-webpage-section {
-        width: 80%; /* Adjust width to 90% on mobile */
-        justify-content: center;
+    .webpage-box {
+        width: 90%; /* Make the box 90% wide on tablets */
+        padding: 30px 30px; /* Adjust padding for smaller screens */
     }
 
     .customizable-webpage-section h2 {
-        font-size: 24px; /* Slightly reduce the heading size on mobile */
-    }
-
-    .webpage-box p {
-        font-size: 16px; /* Adjust paragraph font size for readability */
+        font-size: 28px; /* Adjust heading size for tablets */
     }
 }
 
 @media (max-width: 480px) {
-    .customizable-webpage-section {
-        width: 95%; /* Increase width to 95% on very small screens */
+    .webpage-box {
+        width: 95%; /* Almost full width on mobile */
+        padding: 20px; /* Reduce padding on small screens */
     }
 
     .customizable-webpage-section h2 {
-        font-size: 20px; /* Further reduce heading size */
-    }
-
-    .webpage-box {
-        width:80%;
-        justify-content: center;
+        font-size: 24px; /* Smaller heading for mobile */
     }
 }
 
 
-/* Box for the webpage content */
-.webpage-box {
-    width: 100%; /* Allow full width by default */
-    max-width: 1000px; /* Limit the width to a maximum of 1000px */
-    height: 500px; /* Fixed height for the webpage content area */
-    background-color: #f9f9f9; /* Light background for contrast */
-    margin: 0 auto; /* Center the box horizontally */
-    border: 1px solid #ccc; /* Light border around the box */
-    border-radius: 8px; /* Rounded corners for the box */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds slight shadow for depth */
-    padding: 20px; /* Internal padding inside the box */
-}
 
-.webpage-box p {
-    font-size: 18px;
-    color: #555; /* Slightly muted color for placeholder text */
-}
+/* Centered Heading */
+
+
+
 
 .faq-container {
     margin: 0 60px;
@@ -615,21 +606,6 @@ h4  {
     color: #002366;
 }
 
-.social-icons {
-    display: flex;
-    gap: 15px; /* Space between icons */
-}
-
-.social-icons a {
-    color: #002366;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #f1c40f; /* Gold on hover */
-}
-
 /* Contact Form Styling */
 .contact-form input, .contact-form textarea {
     width: 100%;
@@ -682,6 +658,112 @@ h4  {
 
     .footer-section {
         margin-bottom: 40px;
+    }
+}
+
+
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Our Story Section */
+.our-story-section {
+    background-color: #f9f9f9;
+}
+
+.story-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Styling the Header of the Section */
+.our-story-section h2 {
+    font-size: 42px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.intro-paragraph {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* The Problem, Mission, and Other Blocks */
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* Story Blocks */
+.story-block {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Headings for each section */
+.story-block h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Paragraphs inside story blocks */
+.story-block p {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+}
+
+/* Hover effect */
+.story-block:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .story-content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .intro-paragraph {
+        width: 100%;
+    }
+
+    .story-block {
+        margin-bottom: 20px;
     }
 }
 
