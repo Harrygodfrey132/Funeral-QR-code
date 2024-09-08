@@ -458,7 +458,7 @@ h4  {
 /* --- Mobile Responsive Adjustments --- */
 @media (max-width: 768px) {
     .webpage-box {
-        width: 90%; /* Make the box 90% wide on tablets */
+        width: 80%; /* Make the box 90% wide on tablets */
         padding: 30px 30px; /* Adjust padding for smaller screens */
     }
 
